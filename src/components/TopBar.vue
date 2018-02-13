@@ -1,8 +1,5 @@
 <template>
-  <div id="wrap">
-    <div id="header"><p>Todo list</p></div>
-    <div id="content"></div>
-  </div>
+  <div id="header"><p>Todo list</p></div>
 </template>
 
 <script>

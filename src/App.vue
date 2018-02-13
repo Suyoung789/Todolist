@@ -18,9 +18,6 @@ html, body {
 * {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: none;
-  box-sizing: border-box;
 }
 #app {
   width: 100%;
