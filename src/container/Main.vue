@@ -34,8 +34,8 @@ export default {
   width: 100%;
   height: 110px;
 }
-#todo {
-  display: inline-block;
+.todo {
+  margin-top: 30px;
 }
 .btn {
   width: 1.5%;

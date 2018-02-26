@@ -16,7 +16,7 @@ export default {
 #big {
     width: 50%;
     height: 25px;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     margin: 0 auto;
     margin-top: 50px;
     padding: 0;
