@@ -9,7 +9,7 @@
             <th id="second">Due-Date</th>
             <th id="third">Check</th>
           </tr>
-          <tr v-for="item in 10" :key="item">
+          <tr v-for="item in items" :key="item">
             <td class="fiin"><div class="bot"><input type="text" class="fiinbox"></div></td>
             <td class="sein"><div class="bot2"><input type="text" class="seinbox"></div></td>
             <td class="thin"><input type="checkbox" class="chk"></td>
