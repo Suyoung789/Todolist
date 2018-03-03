@@ -35,7 +35,7 @@ export default {
   height: 110px;
 }
 .todo {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .btn {
   width: 1.5%;

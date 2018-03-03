@@ -1,17 +1,17 @@
 <template>
   <div>
-      <top-bar />
-      <div id="bigger">
-        <input type="text" id="title">
-        <table id="listTable">
+    <top-bar />
+    <div id="bigger">
+        <div id="title"> {{title}} </div>
+        <table id="listrTable">
           <tr>
             <th id="first">Detail</th>
             <th id="second">Due-Date</th>
             <th id="third">Check</th>
           </tr>
-          <tr v-for="item in 10" :key="item">
-            <td class="fiin"><div class="bot"><input type="text" class="fiinbox"></div></td>
-            <td class="sein"><div class="bot2"><input type="text" class="seinbox"></div></td>
+          <tr v-for="item in 1" :key="item">
+            <td class="fiin"><div class="bot">{{deatail}}</div></td>
+            <td class="sein"><div class="bot2">{{due_date}}</div></td>
             <td class="thin"><input type="checkbox" class="chk"></td>
           </tr>
         </table>
@@ -22,10 +22,10 @@
 </template>
 
 <script>
-import TopBar from '@/components/TopBar'
+import TopBar from '../components/TopBar'
 
 export default {
-  name: 'Add',
+  name: 'Detail',
   components: {
     TopBar
   }
@@ -38,7 +38,7 @@ export default {
   height: 7%;
   position: relative;
   left: 40.5%;
-  top: 20px;
+  top: 50px;
   border: none;
   border-bottom: 2px solid #3E516B;
   font-size: 25px;
@@ -48,7 +48,7 @@ table {
   margin-left: 25%;
   width: 80%;
   position: relative;
-  top: 50px;
+  top: 90px;
   margin: 0 auto;
 }
 th {
@@ -59,17 +59,12 @@ th {
 #third {
   width: 15%;
 }
+.fiin {
+  height: 70px;
+}
 input {
   border: none;
   height: 25px;
-}
-.fiinbox {
-  width: 530px;
-  font-size: 15px;
-}
-.seinbox {
-  width: 300px;
-  font-size: 15px;
 }
 .bot {
   border-bottom: 1px solid #3E516B;
@@ -88,8 +83,8 @@ input {
 #adbtn {
   display: inline;
   position: relative;
-  right: -1180px;
-  top: 80px;
+  right: -1325px;
+  top: 110px;
   background-color: #617B98;
   color: white;
   font-size: 15px;
@@ -99,8 +94,8 @@ input {
 #register {
   display: inline;
   position: relative;
-  top: 80px;
-  right: -1080px;
+  top: 110px;
+  right: -1225px;
   background-color: #617B98;
   color: white;
   font-size: 15px;
@@ -108,6 +103,6 @@ input {
   cursor: pointer;
 }
 #listTable {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 </style>

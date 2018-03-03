@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Main from '@/container/Main'
 import Todo from '@/components/Todo'
 import Add from '@/container/Add'
+import Detail from '@/container/Detail'
 
 Vue.use(Router)
 
@@ -22,6 +23,10 @@ export default new Router({
       path: '/add',
       name: 'Add',
       component: Add
+    }, {
+      path: '/detail',
+      name: 'Detail',
+      component: Detail
     }
   ]
 })
